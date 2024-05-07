@@ -1,0 +1,41 @@
+$primary: #9b9b9b;
+$danger: #f10f12;
+$success: #46c37c;
+$secondary: #454545;
+
+$borderRadius: 30px;
+
+$color-title: #f26419;
+$color-backround: black;
+$color-dasboard-text: white;
+
+@font-face {
+  font-family: 'Nunito';
+  src:
+    local('Nunito'),
+    url('../fonts/Nunito.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'WMDisplay';
+  src:
+    local('WMDisplay'),
+    url('../fonts/WixMadeforDisplay.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'WMText';
+  src:
+    local('WMText'),
+    url('../fonts/WixMadeforText.ttf') format('truetype');
+}
+
+@import './dashboard.scss';
+
+@import './header.scss';
+
+@import './btn.scss';
+
+@import './card.scss';
+
+@import '~bootstrap/scss/bootstrap'; // Connect bootstrap

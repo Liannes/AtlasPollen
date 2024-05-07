@@ -1,0 +1,201 @@
+{
+  "extends": [
+    "airbnb",
+    "plugin:react/recommended",
+    "plugin:react-hooks/recommended",
+    "plugin:react/jsx-runtime"
+  ],
+  "parser": "@babel/eslint-parser",
+  "plugins": [
+    "babel",
+    "import",
+    "prettier",
+    "react",
+    "react-hooks",
+    "jest",
+    "jsx-a11y"
+  ],
+  "env": {
+    "browser": true,
+    "commonjs": true,
+    "es6": true,
+    "node": true,
+    "jest": true
+  },
+  "rules": {
+    "react/react-in-jsx-scope": "off",
+    "no-unused-vars": [
+      1,
+      {}
+    ],
+    "import/no-extraneous-dependencies": "error",
+    "jsx-a11y/anchor-is-valid": [
+      "error",
+      {
+        "components": [
+          "Link"
+        ],
+        "specialLink": [
+          "to",
+          "hrefLeft",
+          "hrefRight"
+        ],
+        "aspects": [
+          "noHref",
+          "invalidHref",
+          "preferButton"
+        ]
+      }
+    ],
+    "jsx-a11y/label-has-associated-control": [
+      0,
+      {}
+    ],
+    "jsx-a11y/label-has-for": [
+      "error",
+      {
+        "required": {
+          "some": [
+            "id"
+          ]
+        }
+      }
+    ],
+    "max-len": [
+      "error",
+      {
+        "code": 200,
+        "ignoreRegExpLiterals": true,
+        "tabWidth": 2
+      }
+    ],
+    "no-console": [
+      0
+    ],
+    "no-alert": [
+      0
+    ],
+    "no-trailing-spaces": "off",
+    "no-multiple-empty-lines": "off",
+    "linebreak-style": "off",
+    "react/jsx-one-expression-per-line": [
+      0,
+      {
+        "allow": "literal"
+      }
+    ],
+    "react/jsx-filename-extension": [
+      1,
+      {
+        "extensions": [
+          ".js",
+          ".jsx"
+        ]
+      }
+    ],
+    "react/jsx-fragments": [
+      "off",
+      "element"
+    ],
+    "react/jsx-props-no-spreading": [
+      0,
+      {
+        "html": "ignore"
+      }
+    ],
+    "rest-spread-spacing": "off",
+    "arrow-parens": [
+      2,
+      "as-needed",
+      {
+        "requireForBlockBody": false
+      }
+    ],
+    "template-curly-spacing": "off",
+    "indent": "off",
+    "react/prop-types": "off",
+    "react/destructuring-assignment": "off",
+    "react/forbid-prop-types": "off",
+    "no-restricted-globals": "off",
+    "no-shadow": "off",
+    "react/function-component-definition": "off",
+    "object-curly-newline": [
+      "error",
+      {
+        "ObjectExpression": {
+          "consistent": true
+        },
+        "ObjectPattern": {
+          "multiline": true
+        },
+        "ImportDeclaration": {
+          "multiline": true,
+          "minProperties": 7
+        },
+        "ExportDeclaration": {
+          "multiline": false
+        }
+      }
+    ],
+    "func-names": "off",
+    "arrow-body-style": "off",
+    "prefer-arrow-callback": "off",
+    "operator-linebreak": [
+      "error",
+      "after",
+      {
+        "overrides": {
+          ":": "before",
+          "?": "before"
+        }
+      }
+    ],
+    "react/no-array-index-key": "off",
+    "default-param-last": "off",
+    "no-promise-executor-return": "off",
+    "react/jsx-wrap-multilines": "off",
+    "function-paren-newline": "off",
+    "implicit-arrow-linebreak": "off",
+    "no-nested-ternary": "off",
+    "no-plusplus": [
+      "error",
+      {
+        "allowForLoopAfterthoughts": true
+      }
+    ],
+    "react/jsx-curly-newline": "off",
+    "prefer-destructuring": [
+      "error",
+      {
+        "array": false,
+        "object": true
+      },
+      {
+        "enforceForRenamedProperties": false
+      }
+    ]
+  },
+  "settings": {
+    "import/resolver": {
+      "alias": {
+        "map": [
+          [
+            "Shared",
+            "./src/shared"
+          ],
+          [
+            "Assets",
+            "./src/assets"
+          ]
+        ],
+        "extensions": [
+          ".js",
+          ".css",
+          ".sass",
+          ".json",
+          ".jsx"
+        ]
+      }
+    }
+  }
+}

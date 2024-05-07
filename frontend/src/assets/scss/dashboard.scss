@@ -1,0 +1,30 @@
+.dashboard {
+  width: 100%;
+  min-height: 100vh;
+  background-color: $color-backround;
+
+  &__card {
+    padding-top: 30dvh;
+  }
+
+  &__container {
+    display: grid;
+    position: relative;
+    justify-content: center;
+    justify-items: center;
+
+    &__title {
+      font-family: 'WBDispaly';
+      font-weight: bold;
+      color: $color-title;
+      font-size: 128px;
+    }
+
+    &__text {
+      transform: translateY(-24px);
+      font-family: 'WBText';
+      color: $color-dasboard-text;
+      font-size: 24px;
+    }
+  }
+}

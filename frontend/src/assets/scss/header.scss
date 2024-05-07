@@ -1,0 +1,118 @@
+.topbar {
+  display: flex;
+  justify-content: center;
+  font-family: 'WBText';
+  color: $color-title;
+  font-size: 24px;
+  margin-bottom: 30px;
+
+  &.card-title {
+    color: black;
+    .nav-item {
+      a {
+        color: black;
+        text-decoration: none;
+
+        &:hover,
+        &:active {
+          color: $color-title;
+        }
+      }
+      &:hover,
+      &:active {
+        font-weight: 600;
+        color: $color-title;
+      }
+    }
+    .btn-select {
+      color: black;
+
+      &:hover,
+      &:first-child:active,
+      &:focus,
+      &:active {
+        color: $color-title;
+      }
+    }
+
+    .dropdown {
+      .dropdown-menu {
+        &.show {
+          border-color: $color-title;
+          background-color: white;
+
+          .dropdown-item {
+            a {
+              color: black;
+              &:hover,
+              &:active {
+                color: $color-title;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .nav {
+    cursor: pointer;
+    .search {
+      ~ .dropdown-menu {
+        background-color: $color-backround;
+        border-color: $color-title;
+        overflow-y: scroll;
+        width: 450px;
+        height: 250px;
+
+        &::-webkit-scrollbar {
+          width: 0;
+        }
+
+        .dropdown-item {
+          a {
+            color: white;
+            text-decoration: none;
+
+            &:hover,
+            &:focus,
+            &:active {
+              background-color: transparent;
+              color: $color-title;
+            }
+          }
+
+          &:hover,
+          &:focus,
+          &:active {
+            background-color: transparent;
+            color: $color-title;
+          }
+        }
+      }
+
+      &.dropdown-toggle {
+        &::after {
+          display: none;
+        }
+      }
+      &.show {
+        border: 1px solid transparent;
+
+        &:hover,
+        &:active,
+        &:focus {
+          border: 1px solid transparent;
+        }
+      }
+    }
+
+    &-item {
+      align-self: center;
+      &:hover {
+        color: $color-dasboard-text;
+      }
+      margin: 0 30px 0 30px;
+    }
+  }
+}

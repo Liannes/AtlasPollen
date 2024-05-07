@@ -1,0 +1,20 @@
+.btn {
+  &.btn-select {
+    width: 80px;
+    height: 50px;
+    font-size: 24px;
+    font-family: 'WBText';
+    color: $color-title;
+    background-color: transparent;
+    border: 1px solid transparent;
+
+    &:hover,
+    &:first-child:active,
+    &:focus,
+    &:active {
+      font-weight: 600;
+      border: 1px solid transparent;
+      color: white;
+    }
+  }
+}

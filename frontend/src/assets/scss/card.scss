@@ -1,0 +1,42 @@
+.card_layout {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #ffffff;
+  overflow-y: hidden;
+  .card {
+    margin: 5% 10%;
+    height: 600px;
+    border-color: transparent;
+
+    .card-body {
+      .card-caption {
+        margin-bottom: 15px;
+        padding-left: 40px;
+        display: block;
+        font-family: 'WMDisplay';
+        font-size: 36px;
+        font-weight: bold;
+        color: black;
+      }
+    }
+  }
+}
+.card__add {
+  display: block;
+  width: 350px;
+  margin-left: 60px;
+
+  &-title {
+    font-size: 32px;
+  }
+  &-text {
+    font-size: 24px;
+  }
+}
+
+.card__images {
+  width: 350px;
+  height: 300px;
+  margin-left: 60px;
+  border-radius: $borderRadius;
+}
