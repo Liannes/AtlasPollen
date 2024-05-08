@@ -3,7 +3,7 @@ import { Row, Col } from 'react-bootstrap';
 import { useHistory } from 'react-router-dom';
 import getPlantsPhoto from '../Shared/plantPhoto';
 
-const pageView = props => {
+const PageView = props => {
   const name = sessionStorage.getItem('name');
   const index = sessionStorage.getItem('index');
 
@@ -35,4 +35,4 @@ const pageView = props => {
   );
 };
 
-export default pageView;
+export default PageView;

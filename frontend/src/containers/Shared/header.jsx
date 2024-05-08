@@ -1,18 +1,15 @@
 import { Nav, NavItem, Dropdown, DropdownButton } from 'react-bootstrap';
 import { useEffect, useState } from 'react';
-import { Link, useHistory } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import getPlant from './plant';
 
 const header = props => {
-  const history = useHistory();
   const { variant } = props;
 
   return (
     <div className={`topbar ${variant}`}>
       <Nav>
-        <NavItem href="/home" onClick={() => window.location.replace(`/home`)}>
-          Главная
-        </NavItem>
+        <NavItem onClick={() => window.location.replace(`/`)}>Главная</NavItem>
         <DropdownButton title={<span>Список</span>} variant="select search">
           {getPlant.Fabaceae.map((item, index) => {
             let num = 1;
